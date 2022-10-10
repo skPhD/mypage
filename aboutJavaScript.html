@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>About JavaScript</title>
+</head>
+<body>
+  <h1><a href="index.html" target="_blank" title="Main Page">WEB</a></h1>
+  <ol>
+    <li><a href="aboutHTML.html" target="_blank" title="About HTML">HTML</a></li>
+    <li><a href="aboutCSS.html" target="_blank" title="About CSS">CSS</a></li>
+    <li><a href="aboutJavaScript.html" target="_blank" title="About Javascript">JavaScript</a> </li>
+  </ol>
+  <h1>JavaScript</h1>
+  <p style="margin-top: 30px;">JavaScript（ジャバスクリプト）は、プログラミング言語であり、HTMLやCSSと並ぶ　World Wide Web（WWW）の中核技術の一つである。</p>
+  <p>プロトタイプベースのオブジェクト指向スクリプト言語であるが、クラスなどのクラスベースに見られる機能も取り込んでいる。</p>
+  <p>利用される場面はWebサイト・Webアプリ・バックエンド・デスクトップアプリ・モバイルアプリなど、ブラウザからサーバ、デスクトップからスマートフォンまで多岐にわたっている。</p>
+  <img src="img\javascript-1920.jpg" width="100%">
+  <a href="https://unsplash.com/ja/s/%E5%86%99%E7%9C%9F/javascript?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>の<a href="https://unsplash.com/@6heinz3r?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Gabriel Heinzer</a>が撮影した写真
+  
+  <h2>特徴</h2>
+  <p style="margin-top: 30px;">JavaScriptは以下のような様々なスタイルのプログラミングが可能である。
+    if・forなどの制御構造による手続き型プログラミングスタイル
+    .prototype・classなどのオブジェクトによるオブジェクト指向プログラミングスタイル
+    map・高階関数などの関数操作による関数型プログラミングスタイル
+    これらを可能にしているプログラミング言語としての特徴がある。オブジェクト指向の面では、JavaScriptのオブジェクトはクラスベースではなくプロトタイプベースである[注釈 1]。関数型の面では、第一級関数をサポートし関数を第一級オブジェクトとして扱える。
+    
+    AptanaやEclipse, NetBeans, IntelliJ IDEAなどの統合開発環境はJavaScriptをサポートしており、大規模開発が可能になっている。さらにExt JSなどの本格的なGUIライブラリの登場により、デスクトップアプリケーションと遜色ないユーザインタフェースの構築が可能になった。</p>
+    
+    <h3>並行処理</h3>
+    JavaScriptではしばしば、ネットワークを介したリクエストのような "待ち" がある処理を行う。これ対処するために非同期処理をサポートし並行処理が可能となる。
+    
+    もしも待ちの間にプログラムを停止/sleep させると、その間に他の処理をそのスレッドで行うことが出来ない（ブロッキング）。もしネットワークリクエストが返ってくるまでブロッキングしたとすると、その間ブラウザのレンダリングも停止してしまう。
+    
+    非同期処理を記述する方法としてコールバック関数がある。JavaScriptはコールバック関数記法をラップするPromise、Promiseを同期的なコードのように記述できるasync/await構文をもつ。
+    
+    またJavaScriptは並列処理による並行処理もサポートしている（下記参照）。
+    
+    <h3>並列処理</h3>
+    JavaScriptでは複数スレッドを用いた並列処理が可能である。共有メモリ上のバッファを表現するSharedArrayBuffer、バッファ操作オブジェクトAtomicsが定義されている。スレッドそのものの仕様は環境ごとに異なる（ECMAScriptでは定義されていない）。ブラウザの場合はWorker、Node.jsの場合はworker_threadsで定義されている。ただこの2環境ではほぼ共通の仕組みとなっており、例えばpostMessageによるメッセージングが両者でサポートされている。</p>
+
+</body>
+</html>
